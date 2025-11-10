@@ -1,20 +1,54 @@
-Create table dept3
-AS
+select * from dept7;
+
+create table dept7
+as
 select * from dept2;
+--구조보기
+desc dept7;
+alter table dept7 add(location varchar2(10));
 
-create table dept4
-AS
-select dcode,dname from dept2;
-select * from dept4;
+alter table dept7 rename column location to loc;
 
-create table dept5
-as
-select * from dept2 where dcode=1002;
+rename table dept7 to dept6;
 
-create table dept6
-AS
-select 
+alter table dept7 drop column location cascade constraints;
 
-select table dept7
-as
-select * from dept2 where 1=2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
